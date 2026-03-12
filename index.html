@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APEX — Forge Your Limits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Barlow+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-logo">APEX</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#stats">Stats</a></li>
+      <li><a href="#trainers">Trainers</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <a href="#pricing" class="nav-cta">Join Now</a>
+    <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#programs" class="mobile-link">Programs</a></li>
+      <li><a href="#stats" class="mobile-link">Stats</a></li>
+      <li><a href="#trainers" class="mobile-link">Trainers</a></li>
+      <li><a href="#pricing" class="mobile-link">Pricing</a></li>
+    </ul>
+  </div>
+
+  <section class="hero" id="hero">
+    <canvas id="threeCanvas"></canvas>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" id="heroEyebrow">Premium Training Facility</div>
+      <h1 class="hero-title" id="heroTitle">
+        <span class="line" data-line="1">FORGE</span>
+        <span class="line accent-line" data-line="2">YOUR</span>
+        <span class="line" data-line="3">LIMITS</span>
+      </h1>
+      <p class="hero-sub" id="heroSub">Where champions are built. Science-driven. Elite-coached. Relentlessly optimized for the athlete inside you.</p>
+      <div class="hero-actions" id="heroActions">
+        <a href="#programs" class="btn btn-primary">Explore Programs</a>
+        <a href="#stats" class="btn btn-ghost">View Results</a>
+      </div>
+      <div class="hero-scroll-hint" id="heroScroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-stats-bar" id="heroStatsBar">
+      <div class="hstat"><strong>12K+</strong><span>Members</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>98%</strong><span>Goal Rate</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>47</strong><span>Elite Trainers</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>24/7</strong><span>Access</span></div>
+    </div>
+  </section>
+
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal-left">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title">Not just a gym.<br /><em>A system.</em></h2>
+          <p class="section-body">APEX was engineered for those who refuse average. Our methodology fuses biomechanical science, periodization programming, and elite-level coaching into a single, seamless experience.</p>
+          <p class="section-body">Every machine calibrated. Every rep intentional. Every session a step toward something greater.</p>
+          <a href="#programs" class="btn btn-primary" style="margin-top:2rem;">See Our Programs</a>
+        </div>
+        <div class="about-right reveal-right">
+          <div class="about-card-stack">
+            <div class="glass-card about-card-main">
+              <div class="card-icon">&#9889;</div>
+              <h3>Adaptive Programming</h3>
+              <p>AI-assisted plans that evolve with your performance data every week.</p>
+            </div>
+            <div class="glass-card about-card-float">
+              <div class="card-icon">&#129516;</div>
+              <h3>Biometric Tracking</h3>
+              <p>HRV, VO2 max, recovery scores — every metric visualized in real time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="programs section-pad" id="programs">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Programs built<br />for results.</h2>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card glass-card reveal-up" data-delay="0"><div class="program-num">01</div><h3>Strength &amp; Power</h3><p>Progressive overload programming for raw, functional strength gains.</p><div class="program-tag">12-week blocks</div></div>
+        <div class="program-card glass-card reveal-up" data-delay="0.1"><div class="program-num">02</div><h3>HIIT &amp; Conditioning</h3><p>Maximum caloric burn, cardiovascular adaptation, athletic conditioning.</p><div class="program-tag">4x per week</div></div>
+        <div class="program-card glass-card reveal-up" data-delay="0.2"><div class="program-num">03</div><h3>Sport Performance</h3><p>Athletic movement, speed development, and sport-specific training protocols.</p><div class="program-tag">Custom cycles</div></div>
+        <div class="program-card glass-card reveal-up" data-delay="0.3"><div class="program-num">04</div><h3>Mobility &amp; Recovery</h3><p>Fascia work, active recovery, and longevity-focused movement practices.</p><div class="program-tag">Daily access</div></div>
+        <div class="program-card glass-card reveal-up" data-delay="0.4"><div class="program-num">05</div><h3>Nutrition Coaching</h3><p>Macro-optimized meal planning aligned with your training phase and goals.</p><div class="program-tag">Weekly check-ins</div></div>
+        <div class="program-card glass-card reveal-up" data-delay="0.5"><div class="program-num">06</div><h3>1-on-1 Elite Coaching</h3><p>Dedicated trainer, personalized roadmap, and weekly performance reviews.</p><div class="program-tag">Premium tier</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-band" id="stats">
+    <div class="parallax-bg" id="parallaxBg"></div>
+    <div class="stats-overlay"></div>
+    <div class="container stats-inner">
+      <div class="stat-block reveal-up"><div class="stat-num" data-target="12000">0</div><div class="stat-label">Members Worldwide</div></div>
+      <div class="stat-block reveal-up" data-delay="0.1"><div class="stat-num" data-target="98">0</div><div class="stat-label">% Goal Achievement Rate</div></div>
+      <div class="stat-block reveal-up" data-delay="0.2"><div class="stat-num" data-target="47">0</div><div class="stat-label">Elite Certified Trainers</div></div>
+      <div class="stat-block reveal-up" data-delay="0.3"><div class="stat-num" data-target="9">0</div><div class="stat-label">Years of Excellence</div></div>
+    </div>
+  </section>
+
+  <section class="trainers section-pad" id="trainers">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">The Team</span>
+        <h2 class="section-title">Coaches who've<br />lived the grind.</h2>
+      </div>
+      <div class="trainers-grid">
+        <div class="trainer-card glass-card reveal-up" data-delay="0">
+          <div class="trainer-avatar" style="background:linear-gradient(135deg,#1a1a1a,#e63b2e22)">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="14" fill="#e63b2e" opacity=".3"/><path d="M16 72 Q16 52 40 52 Q64 52 64 72" fill="#e63b2e" opacity=".2"/><circle cx="40" cy="28" r="10" fill="#e63b2e" opacity=".6"/></svg>
+          </div>
+          <h3>Marcus Reid</h3><span class="trainer-role">Strength &amp; Power</span>
+          <p>Former Olympic weightlifter. 12 years coaching elite athletes at national level.</p>
+          <div class="trainer-certs">CSCS &middot; USAW-L2 &middot; FMS</div>
+        </div>
+        <div class="trainer-card glass-card reveal-up" data-delay="0.15">
+          <div class="trainer-avatar" style="background:linear-gradient(135deg,#1a1a1a,#e63b2e22)">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="14" fill="#ff6b35" opacity=".3"/><path d="M16 72 Q16 52 40 52 Q64 52 64 72" fill="#ff6b35" opacity=".2"/><circle cx="40" cy="28" r="10" fill="#ff6b35" opacity=".6"/></svg>
+          </div>
+          <h3>Zara Osei</h3><span class="trainer-role">Sport Performance</span>
+          <p>Track &amp; field specialist. Sprints coach for 3 national champions across 5 seasons.</p>
+          <div class="trainer-certs">NSCA-CPT &middot; USATF &middot; SAQ</div>
+        </div>
+        <div class="trainer-card glass-card reveal-up" data-delay="0.3">
+          <div class="trainer-avatar" style="background:linear-gradient(135deg,#1a1a1a,#e63b2e22)">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="14" fill="#c0392b" opacity=".3"/><path d="M16 72 Q16 52 40 52 Q64 52 64 72" fill="#c0392b" opacity=".2"/><circle cx="40" cy="28" r="10" fill="#c0392b" opacity=".6"/></svg>
+          </div>
+          <h3>Kenji Mori</h3><span class="trainer-role">Mobility &amp; Recovery</span>
+          <p>Sports physiotherapist and movement specialist. Trains pro MMA fighters and NBA players.</p>
+          <div class="trainer-certs">DPT &middot; FRC &middot; PRI-certified</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing section-pad" id="pricing">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Membership</span>
+        <h2 class="section-title">Invest in your<br />best self.</h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card glass-card reveal-up" data-delay="0">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-price"><sup>$</sup>49<sub>/mo</sub></div>
+          <p class="pricing-desc">Full facility access. Perfect for self-directed athletes.</p>
+          <ul class="pricing-features"><li>Unlimited facility access</li><li>Locker &amp; towel service</li><li>Group classes (4/week)</li><li>App-based programming</li><li>Progress tracking</li></ul>
+          <a href="#" class="btn btn-ghost" style="width:100%;text-align:center;margin-top:auto">Get Started</a>
+        </div>
+        <div class="pricing-card glass-card pricing-featured reveal-up" data-delay="0.15">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Performance</div>
+          <div class="pricing-price"><sup>$</sup>129<sub>/mo</sub></div>
+          <p class="pricing-desc">Structured coaching for serious goal-getters.</p>
+          <ul class="pricing-features"><li>Everything in Starter</li><li>Monthly 1-on-1 sessions (4)</li><li>Custom nutrition plan</li><li>Biometric assessment</li><li>Priority class booking</li><li>Recovery room access</li></ul>
+          <a href="#" class="btn btn-primary" style="width:100%;text-align:center;margin-top:auto">Get Started</a>
+        </div>
+        <div class="pricing-card glass-card reveal-up" data-delay="0.3">
+          <div class="pricing-tier">Elite</div>
+          <div class="pricing-price"><sup>$</sup>299<sub>/mo</sub></div>
+          <p class="pricing-desc">The full APEX experience. Unlimited access to everything.</p>
+          <ul class="pricing-features"><li>Everything in Performance</li><li>Dedicated personal trainer</li><li>Weekly 1-on-1 sessions</li><li>Cryotherapy &amp; sauna</li><li>Guest passes (4/mo)</li><li>Concierge support</li></ul>
+          <a href="#" class="btn btn-ghost" style="width:100%;text-align:center;margin-top:auto">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-content reveal-up">
+      <h2>Your next chapter starts<br /><em>today.</em></h2>
+      <p>14-day free trial. No contracts. Cancel anytime.</p>
+      <a href="#pricing" class="btn btn-primary btn-large">Start Free Trial</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">APEX</div>
+        <p>Engineered for the elite.<br />Built for the dedicated.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Train</h4><a href="#">Programs</a><a href="#">Classes</a><a href="#">Personal Training</a><a href="#">Nutrition</a></div>
+        <div class="footer-col"><h4>Facility</h4><a href="#">Equipment</a><a href="#">Recovery</a><a href="#">Amenities</a><a href="#">Schedule</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="#">About</a><a href="#">Trainers</a><a href="#">Careers</a><a href="#">Contact</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 APEX Training. All rights reserved.</span><span>Privacy &middot; Terms &middot; Cookies</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
